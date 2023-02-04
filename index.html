@@ -5,9 +5,52 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<script src="script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/00024532b7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
-	stuff to look at
+     <div class="container">
+		<div class="header">
+		  <h1 class="title">Rock Paper Scissors</h1>
+		  <p class="desc">The first player to reach five points wins.</p>
+	    </div>
+		<div class="gameboard">
+			<div class="signs">
+			<div data-sign="paper" class="sign paper">
+            <i class="fa-regular fa-2xl fa-hand"></i>
+			<p>PAPER</p>
+			</div>
+			<div data-sign="scissors" class="sign scissors">
+            <i class="fa-regular fa-2xl fa-hand-scissors"></i>
+			<p>SCISSORS</p>
+		    </div>
+			<div data-sign="rock" class="sign rock">
+            <i class="fa-regular fa-2xl fa-hand-back-fist"></i>
+			<p>ROCK</p>
+		</div>
+		</div>
+		</div>
+		<div class="scoreboard">
+			<div class="scores">
+				<div class="player score">
+				Player score: 0
+				</div>
+				<div class="computer score">
+				Computer score: 0
+				</div>
+			</div>
+			<div class="message"></div>
+		</div>
+		<div class="overlay hidden">
+			<div class="modal">
+				<p class="modal-message">You won!</p>
+				<button class="restart">Restart</button>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
